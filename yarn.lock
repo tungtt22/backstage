@@ -11354,13 +11354,13 @@ __metadata:
   linkType: hard
 
 "@octokit/graphql@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "@octokit/graphql@npm:5.0.1"
+  version: 5.0.2
+  resolution: "@octokit/graphql@npm:5.0.2"
   dependencies:
     "@octokit/request": ^6.0.0
-    "@octokit/types": ^7.0.0
+    "@octokit/types": ^8.0.0
     universal-user-agent: ^6.0.0
-  checksum: 310549c2d7966adb46428e943cd99cb766519819bd4945d8349d3ec0642e4ee39d9194e1b0a87a5404951c04c247fafb4a8456ed4c839c64bfb4042aa4a6812c
+  checksum: cc746573f5782f92723d988c44c1864b6cf51bbfe7b2f33c9dcc1c5dc3fd7b58bacce083a3631512e1200e3d6e00a21f66b26e69b92d7d4d0e682d630e712eb9
   languageName: node
   linkType: hard
 
