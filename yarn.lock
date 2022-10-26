@@ -3314,7 +3314,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/catalog-model@npm:^1.1.1, @backstage/catalog-model@npm:^1.1.2":
+"@backstage/catalog-model@npm:^1.1.2":
   version: 1.1.2
   resolution: "@backstage/catalog-model@npm:1.1.2"
   dependencies:
@@ -3599,7 +3599,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/core-components@npm:^0.11.1, @backstage/core-components@npm:^0.11.2":
+"@backstage/core-components@npm:^0.11.2":
   version: 0.11.2
   resolution: "@backstage/core-components@npm:0.11.2"
   dependencies:
@@ -3722,7 +3722,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/core-plugin-api@npm:^1.0.6, @backstage/core-plugin-api@npm:^1.0.7":
+"@backstage/core-plugin-api@npm:^1.0.7":
   version: 1.0.7
   resolution: "@backstage/core-plugin-api@npm:1.0.7"
   dependencies:
@@ -5066,7 +5066,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/plugin-catalog-react@npm:^1.1.4, @backstage/plugin-catalog-react@npm:^1.2.0":
+"@backstage/plugin-catalog-react@npm:^1.2.0":
   version: 1.2.0
   resolution: "@backstage/plugin-catalog-react@npm:1.2.0"
   dependencies:
@@ -16711,17 +16711,35 @@ __metadata:
   linkType: hard
 
 "aws-sdk-mock@npm:^5.2.1":
-  version: 5.7.0
-  resolution: "aws-sdk-mock@npm:5.7.0"
+  version: 5.8.0
+  resolution: "aws-sdk-mock@npm:5.8.0"
   dependencies:
-    aws-sdk: ^2.1122.0
-    sinon: ^13.0.2
+    aws-sdk: ^2.1231.0
+    sinon: ^14.0.1
     traverse: ^0.6.6
-  checksum: 9ac22cffc2e99c64af7aa29d2b4030ff8fdbb36d98cb27008952371d159ce974d31538fded372484e5d89e3fa9c22df0b7835d635a325734696a68c96a09e668
+  checksum: c0b06d63d375a6f6664a5860815bdcc21cbe752f227f3617db8bd9042e48604e5cc26834876909c8fc1e68ac937166f4cb0637b3cb565d05c9a64aa025fe3407
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1122.0, aws-sdk@npm:^2.814.0, aws-sdk@npm:^2.840.0, aws-sdk@npm:^2.948.0":
+"aws-sdk@npm:^2.1231.0":
+  version: 2.1240.0
+  resolution: "aws-sdk@npm:2.1240.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    util: ^0.12.4
+    uuid: 8.0.0
+    xml2js: 0.4.19
+  checksum: 09377d1824c86ecd33617fd457cc16446f342a9adb63aba55bcdc5055e7205f9249e970f6656b555a549d62ef28fc6df53e2fad97a191516ff6f4d4e76394892
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.814.0, aws-sdk@npm:^2.840.0, aws-sdk@npm:^2.948.0":
   version: 2.1224.0
   resolution: "aws-sdk@npm:2.1224.0"
   dependencies:
@@ -36026,9 +36044,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sinon@npm:^13.0.2":
-  version: 13.0.2
-  resolution: "sinon@npm:13.0.2"
+"sinon@npm:^14.0.1":
+  version: 14.0.1
+  resolution: "sinon@npm:14.0.1"
   dependencies:
     "@sinonjs/commons": ^1.8.3
     "@sinonjs/fake-timers": ^9.1.2
@@ -36036,7 +36054,7 @@ __metadata:
     diff: ^5.0.0
     nise: ^5.1.1
     supports-color: ^7.2.0
-  checksum: 237f21c8c4a8b31574c71b1b9f4c0f74a63dde5c0e86bd116effa4ce63c52467bd45fb4034a8fa32656a7919d9b19fc7b108ca9e1e6e3144f3735da96dad2877
+  checksum: 55dd8dc9f33bf714fcd4cf9af5b67a3ba854da9e94d4be70bfbc13fa1113db03bdccec21fe1ded1dbf750a21f35be9727c779178ac981e55eeac9245acfdaa74
   languageName: node
   linkType: hard
 
