@@ -32,6 +32,7 @@ import { RenderResult } from '@testing-library/react';
 import { RouteRef } from '@backstage/core-plugin-api';
 import { StorageApi } from '@backstage/core-plugin-api';
 import { StorageValueSnapshot } from '@backstage/core-plugin-api';
+import { SubRouteRef } from '@backstage/core-plugin-api';
 
 // @public
 export type AsyncLogCollector = () => Promise<void>;
@@ -231,7 +232,7 @@ export class TestApiRegistry implements ApiHolder {
 export type TestAppOptions = {
   routeEntries?: string[];
   mountedRoutes?: {
-    [path: string]: RouteRef | ExternalRouteRef;
+    [path: string]: RouteRef | ExternalRouteRef | SubRouteRef;
   };
 };
 

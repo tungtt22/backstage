@@ -28,6 +28,7 @@ import {
   ExternalRouteRef,
   attachComponentData,
   createRouteRef,
+  SubRouteRef,
 } from '@backstage/core-plugin-api';
 import { RenderResult } from '@testing-library/react';
 import { renderWithEffects } from './testingLibrary';
@@ -96,11 +97,11 @@ export type TestAppOptions = {
    * // ...
    * const link = useRouteRef(myRouteRef)
    */
-  mountedRoutes?: { [path: string]: RouteRef | ExternalRouteRef };
+  mountedRoutes?: { [path: string]: RouteRef | ExternalRouteRef | SubRouteRef };
 };
 
 function isExternalRouteRef(
-  routeRef: RouteRef | ExternalRouteRef,
+  routeRef: RouteRef | ExternalRouteRef | SubRouteRef,
 ): routeRef is ExternalRouteRef {
   // TODO(Rugvip): Least ugly workaround for now, but replace :D
   return String(routeRef).includes('{type=external,');
