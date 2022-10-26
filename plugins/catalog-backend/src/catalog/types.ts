@@ -91,7 +91,11 @@ export interface EntitiesBatchRequest {
   /**
    * Any additional filters to apply in the selection of the entities.
    */
-  filter?: EntityFilter | undefined;
+  filter?: EntityFilter;
+  /**
+   * Strips out only the parts of the entity bodies to include in the response.
+   */
+  fields?: (entity: Entity) => Entity;
   /**
    * The optional token that authorizes the action.
    */
