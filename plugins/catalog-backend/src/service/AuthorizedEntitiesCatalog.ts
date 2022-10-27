@@ -87,7 +87,7 @@ export class AuthorizedEntitiesCatalog implements EntitiesCatalog {
 
     if (authorizeDecision.result === AuthorizeResult.DENY) {
       return {
-        entities: new Array(request.entityRefs.length).fill(null),
+        items: new Array(request.entityRefs.length).fill(null),
       };
     }
 

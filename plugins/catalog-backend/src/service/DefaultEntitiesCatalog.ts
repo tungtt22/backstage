@@ -262,13 +262,13 @@ export class DefaultEntitiesCatalog implements EntitiesCatalog {
       }
     }
 
-    let entities = request.entityRefs.map(ref => lookup.get(ref) ?? null);
+    let items = request.entityRefs.map(ref => lookup.get(ref) ?? null);
 
     if (request.fields) {
-      entities = entities.map(e => e && request.fields!(e));
+      items = items.map(e => e && request.fields!(e));
     }
 
-    return { entities };
+    return { items };
   }
 
   async removeEntityByUid(uid: string): Promise<void> {

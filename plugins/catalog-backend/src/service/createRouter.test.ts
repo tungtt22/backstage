@@ -279,14 +279,14 @@ describe('createRouter readonly disabled', () => {
 
     it('can fetch entities by refs', async () => {
       const entity: Entity = {} as any;
-      entitiesCatalog.entitiesBatch.mockResolvedValue({ entities: [entity] });
+      entitiesCatalog.entitiesBatch.mockResolvedValue({ items: [entity] });
       const response = await request(app)
         .post('/entities/by-refs')
         .set('Content-Type', 'application/json')
         .send('{"entityRefs":["a"]}');
       expect(entitiesCatalog.entitiesBatch).toHaveBeenCalledTimes(1);
       expect(response.status).toEqual(200);
-      expect(response.body).toEqual({ entities: [entity] });
+      expect(response.body).toEqual({ items: [entity] });
     });
   });
 

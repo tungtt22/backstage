@@ -565,7 +565,7 @@ describe('DefaultEntitiesCatalog', () => {
 
         const catalog = new DefaultEntitiesCatalog(knex, stitcher);
 
-        const { entities } = await catalog.entitiesBatch({
+        const { items } = await catalog.entitiesBatch({
           entityRefs: [
             'k:default/two',
             'k:default/one',
@@ -576,7 +576,7 @@ describe('DefaultEntitiesCatalog', () => {
           ],
         });
 
-        expect(entities.map(e => e && stringifyEntityRef(e))).toEqual([
+        expect(items.map(e => e && stringifyEntityRef(e))).toEqual([
           'k:default/two',
           'k:default/one',
           'k:default/two',

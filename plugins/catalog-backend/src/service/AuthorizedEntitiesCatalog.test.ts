@@ -100,13 +100,13 @@ describe('AuthorizedEntitiesCatalog', () => {
       ]);
       const catalog = createCatalog();
 
-      expect(
-        await catalog.entitiesBatch({
+      await expect(
+        catalog.entitiesBatch({
           entityRefs: ['component:default/component-a'],
           authorizationToken: 'abcd',
         }),
-      ).toEqual({
-        entities: [null],
+      ).resolves.toEqual({
+        items: [null],
       });
 
       expect(fakeCatalog.entitiesBatch).not.toHaveBeenCalled();
