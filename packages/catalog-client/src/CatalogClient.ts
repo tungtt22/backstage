@@ -178,8 +178,14 @@ export class CatalogClient implements CatalogApi {
     request: GetEntitiesByRefRequest,
     options?: CatalogRequestOptions,
   ): Promise<GetEntitiesByRefResponse> {
+    const params: string[] = [];
+    if (request.fields?.length) {
+      params.push(`fields=${request.fields.map(encodeURIComponent).join(',')}`);
+    }
+
     const baseUrl = await this.discoveryApi.getBaseUrl('catalog');
-    const url = `${baseUrl}/entities/by-ref`;
+    const query = params.length ? `?${params.join('&')}` : '';
+    const url = `${baseUrl}/entities/by-ref${query}`;
 
     const response = await this.fetchApi.fetch(url, {
       headers: {
